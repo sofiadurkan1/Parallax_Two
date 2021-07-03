@@ -1,6 +1,6 @@
-*{
+/* *{
     border: 1px solid;
-}
+} */
 
 body,html{
     margin: 0;
@@ -43,13 +43,19 @@ body,html{
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: relative;
+    opacity: 0.7;
+    /* position: relative; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .heading-container{
+    /* position
     position: absolute;
     top: 50%;
-    width: 100%;
+    width: 100%; */
     text-align: center;
     font-size: 3rem;
     letter-spacing: 0.5rem;
@@ -80,6 +86,48 @@ body,html{
     outline: 0.4rem inset purple;
     outline-offset: 0.2rem;
     text-transform:capitalize;
-    line-height: 2rem;
+    line-height: 5rem;
 
+}
+.section{
+    text-align: center;
+    padding: 3rem 5rem 5rem;
+
+}
+
+.section--light{
+    background-color:rgb(241, 241, 241);
+    color: #666;
+}
+.section--dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+@media (max-width:760px) {
+    .heading-container{
+        font-size: 2rem;
+    }
+    .heading-container__heading--big{
+        padding: 1rem;
+        border-bottom-right-radius:1rem ;
+        border-top-left-radius: 1rem;
+        outline: 0.4rem inset purple;
+        outline-offset: 0.6rem;
+        line-height: 2.5rem;
+
+    }
+    .heading-container__heading--small{
+        padding: 0.4rem;
+        border-top-left-radius: 0.3rem;
+        border-bottom-right-radius:0.3rem ;
+        outline: 0.2rem inset purple;
+        outline-offset: 0.1rem;
+        line-height: 2.4rem;
+
+    }
+    .section{
+        font-size: 0.9rem;
+    }
+    
 }
